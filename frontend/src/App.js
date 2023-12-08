@@ -8,7 +8,7 @@ function App() {
   return (
     <Container maxWidth="lg">
         
-        <Typography variant='h3' gutterBottom>Drinks today?</Typography>
+        <Typography variant='h3' gutterBottom>Choose a drink</Typography>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<CocktailList/>}/>

@@ -1,7 +1,9 @@
-import { Button, Card, CardActionArea, CardContent, CardMedia, Grid, TextField, Typography } from "@mui/material";
+import { Button, Card, CardActionArea, CardContent, CardMedia, Grid, Rating, TextField, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import axios from "axios"
 import { Link } from "react-router-dom";
+import BasicRating from "./BasicRating";
+
 
 const backendURL = "http://localhost:5001"
 
@@ -37,16 +39,18 @@ const CocktailList = ()=>{
                         <CardMedia component="img" image={c.strDrinkThumb}/>
                         <CardContent>
                         <Typography gutterBottom variant="h6" component="div">
-                            {c.strDrink}
+                            {c.strDrink}                            
                         </Typography>
+
+                        <BasicRating></BasicRating>
                         
                         </CardContent>
                     </CardActionArea>
                 </Card>
             </Grid>
         ))}
+        
     </Grid>)
-    
 }
 
 export default CocktailList;
