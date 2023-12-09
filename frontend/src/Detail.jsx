@@ -4,7 +4,7 @@ import axios from "axios"
 import { Button, Grid, Typography } from "@mui/material";
 
 
-const backendURL = "http://localhost:5001"
+const backendURL = "https://term-project-backend-cikz.onrender.com"
 
 
 const Detail = ()=>{
