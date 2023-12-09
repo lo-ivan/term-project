@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import BasicRating from "./BasicRating";
 
 
-const backendURL = "http://localhost:5001"
+const backendURL = "https://term-project-backend-cikz.onrender.com"
 
 
 const CocktailList = ()=>{
